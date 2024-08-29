@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_img"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/e_vote_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UOK STUDENT VOTEHUB"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="33dp"
+            android:textColor="@color/laven_txt"
+            />
+
+        <!-- Welcome TextView -->
+        <TextView
+            android:id="@+id/welcome_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/laven_txt"
+            android:layout_below="@id/e_vote_title"
+            android:gravity="center"
+            android:text="Welcome To UOK Student Voting System"
+            android:textSize="27sp"
+            android:padding="20dp"
+            android:layout_marginBottom="10dp"
+            />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/time_count"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/welcome_title"
+            app:cardBackgroundColor="@color/laven"
+            app:cardElevation="4dp"
+            android:padding="16dp"
+            app:cardCornerRadius="12dp">
+
+            <TextView
+                android:id="@+id/countdown_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="00d: 00h: 00m: 00s" />
+            <TextView
+                android:id="@+id/nomtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/countdown_text"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="Vote Time Count"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardBackgroundColor="@color/laven"
+            app:cardCornerRadius="8dp"
+            android:layout_below="@id/time_count"
+            app:cardElevation="4dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/account_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/home_image"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Account Icon"
+                    android:layout_marginTop="0dp" />
+                <!-- Mini Instruction TextView -->
+                <TextView
+                    android:id="@+id/mini_instruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/welcome_title"
+                    android:gravity="center"
+                    android:text="@string/mini_instruction"
+                    android:textSize="19sp"
+                    android:padding="16dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <!-- Instruction TextView -->
+                <TextView
+                    android:id="@+id/instruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/mini_instruction"
+                    android:gravity="center"
+                    android:text="@string/instruction"
+                    android:textSize="19sp"
+                    android:padding="16dp"
+                    android:layout_marginBottom="20dp"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/vote_heading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/card"
+            android:text="Please check on Instruction then vote."
+            android:textColor="@color/laven_txt"
+            android:textSize="22sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/vote_heading"
+            android:text="Scroll Horizontally >>>"
+            android:layout_marginLeft="35dp"
+            android:textColor="#23EC2B"
+            android:textSize="17sp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_below="@id/scroll"
+            android:scrollbars="horizontal"/>
+        <TextView
+            android:id="@+id/result_heading"
+            android:layout_below="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Please check results for your votes."
+            android:textColor="@color/laven_txt"
+            android:textSize="22sp"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/lin_result"
+            android:layout_below="@+id/result_heading">
+
+            <!--card view results for delegate-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_delegate_result"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclerView"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imagedel"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/del_result_img" />
+
+                    <TextView
+                        android:id="@+id/textdel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="Delegates Results"
+                        android:textSize="18sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/del_results_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="@color/laven"
+                        android:text="Check Results"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!--card view results for senior-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_senior_result"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_delegate_result"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imagesen"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/sen_result_img" />
+
+                    <TextView
+                        android:id="@+id/textsen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="Executives Results"
+                        android:textSize="18sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/senior_results_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/laven"
+                        android:layout_marginTop="8dp"
+                        android:text="Check Results"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+

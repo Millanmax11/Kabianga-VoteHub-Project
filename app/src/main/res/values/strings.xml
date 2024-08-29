@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Kabianga VoteHub</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="school_options">
+        <item>Choose Your School</item>
+        <item>Technology</item>
+        <item>Education</item>
+        <item>Agriculture</item>
+        <item>Business</item>
+    </string-array>
+
+    <!--Home Content-->
+    <string name="mini_instruction">
+        All students are welcomed to vote for their representatives in this platform.
+    </string>
+    <string name="instruction">
+        Please read the instructions on how to vote by clicking button below.
+    </string>
+    <string name="almostvote">
+        Welcome to the Student VoteHub!
+         The countdown is ticking down to the start of the voting period.
+          Get ready to participate when voting opens soon!
+    </string>
+
+    <string name="paragraph1">
+        Welcome to the UOK Student E-Vote, an innovative mobile application designed to revolutionize the way students participate in elections.
+        Our app is built to provide a seamless, secure, and user-friendly voting experience that empowers every student to have their voice heard.
+        Say goodbye to the outdated manual voting methods and cumbersome web-based systems that were often difficult to access and use.
+    </string>
+    <string name="paragraph2">
+        At UOK Student E-Vote, we understand the importance of convenience and accessibility.
+        Our app allows students to cast their votes effortlessly from anywhere, using their smartphones.
+        No more long queues or complicated procedures—voting is now just a few taps away.
+        Our mission is to make the electoral process as straightforward and engaging as possible.
+    </string>
+    <string name="paragraph3">
+        The development of UOK Student E-Vote was driven by a commitment to enhance democratic participation within the student community.
+        By leveraging cutting-edge technology, we aim to create an inclusive platform where every vote counts.
+        Our secure and transparent system ensures that each election is fair, with results that accurately reflect the will of the student body.
+    </string>
+    <string name="paragraph4">
+        Security is at the core of our app\'\s design. We have implemented robust authentication mechanisms to protect voter identity and data integrity.
+        Our system uses advanced encryption techniques to safeguard all transactions, providing peace of mind that your vote is confidential and secure.
+        With UOK Student E-Vote, you can trust that your participation is both safe and private.
+    </string>
+    <string name="paragraph5">
+        Our app also promotes engagement and awareness among students. Through an intuitive interface, users can easily view candidate profiles,
+        learn about their platforms, and make informed decisions.
+        We believe that an informed electorate is essential for a vibrant democracy, and our app is designed to facilitate
+        this by providing comprehensive information at your fingertips.
+    </string>
+    <string name="paragraph6">
+        In addition to convenience and security, UOK Student E-Vote is designed to be inclusive.
+        We recognize that every student\'\s voice is important, regardless of their location or circumstances.
+        Our app is accessible to all students, ensuring that everyone has an equal opportunity to participate in the electoral process.
+        This inclusivity strengthens our community and fosters a sense of unity and shared responsibility.
+    </string>
+    <string name="paragraph7">
+        The journey to develop UOK Student E-Vote was fueled by a passion for innovation and a desire to make a positive impact.
+        Our team of dedicated developers, designers, and security experts worked tirelessly to bring this vision to life.
+        We are proud of what we have achieved and are excited to see the positive changes it will bring to student elections.
+    </string>
+    <string name="paragraph8">
+        Join us in embracing the future of student voting. UOK Student E-Vote is more than just an app—it\'\s a movement towards a more democratic,
+        engaged, and informed student community.
+        Together, let\'\s make every vote count and build a brighter future for all.
+    </string>
+    <string name="instruction1">
+        In the Delegate Voting section, students will have the opportunity to vote for their preferred candidates to represent their interests.
+        Each student is required to agree to the terms and conditions before accessing the voting page.
+        Once on the voting page, students must select three candidates from a list of delegates.
+        This process ensures that the elected delegates truly represent the diverse interests and concerns of the student body.
+        After casting their votes, students will be able to check the results to see which candidates have been successfully elected as their delegates.
+    </string>
+    <string name="instruction2">
+        The Senior Voting section is designed to allow elected delegates to vote for their senior representatives.
+        As with these delegates,they have to agree with the terms and conditions before proceeding to the voting page. On this page,
+        delegates are required to vote for one candidate per slot, ensuring that each vote is counted fairly and accurately.
+        After voting, all students can view the results to see which seniors have been elected.
+        This system ensures that the elected senior representatives are chosen through a democratic process and reflect the students\'\ preferences
+        and trust.
+    </string>
+
+</resources>

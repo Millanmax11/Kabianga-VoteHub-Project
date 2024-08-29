@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?><!-- THIS IS A LAYOUT TO DISPLAY SENIOR TO BE VOTED FOR -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/DelegateFragment"
+    android:background="@drawable/background_img"
+    android:orientation="vertical"
+    tools:context=".DelegateFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/navigationBarColor"
+        android:theme="?attr/actionBarTheme"
+        android:layout_marginTop="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/about_image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/uok_logo"
+                    android:contentDescription="About Image"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/about_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/about_image"
+                    android:gravity="center"
+                    android:text="Voting For UOK Students Leaders"
+                    android:textColor="@color/laven_txt"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="16dp">
+
+                <TextView
+                    android:id="@+id/textViewSchool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar"
+                    android:textColor="@color/laven_txt"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/senior_vote_inst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Vote For Executives"
+                android:textColor="@color/laven_txt"
+                android:textSize="19sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclingView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:visibility="visible" /> <!-- Set to visible initially -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit_del_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclingView"
+                android:layout_gravity="end"
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:text="SUBMIT YOUR VOTE"
+                android:backgroundTint="@color/laven" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

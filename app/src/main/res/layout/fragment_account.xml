@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_img"
+    tools:context=".LoginActivity">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Profile"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:layout_marginBottom="70dp"
+        android:textColor="@color/laven" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/laven"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:id="@+id/account_icon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/account_profile"
+            android:scaleType="centerCrop"
+            android:contentDescription="Account Icon"
+            android:layout_marginTop="32dp" />
+
+        <!-- LinearLayout for username -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/usernamehold"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account_icon"
+                android:text="Username"
+                android:textSize="18sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Username ..."
+                android:layout_marginStart="20dp"
+                android:textSize="18sp"
+                android:textColor="#714381" />
+        </LinearLayout>
+
+        <!-- LinearLayout for email -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/emailhold"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="18sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Email ..."
+                android:layout_marginStart="20dp"
+                android:textSize="18sp"
+                android:textColor="#714381" />
+        </LinearLayout>
+
+        <!-- LinearLayout for school -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/schoolhold"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="School"
+                android:textSize="18sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/school"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="School ..."
+                android:layout_marginStart="20dp"
+                android:textSize="18sp"
+                android:textColor="#714381" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

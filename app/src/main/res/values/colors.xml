@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="statusBarColor">#000000</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="laven">#358FD6</color>
+    <color name="back_clr">#433849</color>
+    <color name="laven_txt">#358FD6</color>
+</resources>

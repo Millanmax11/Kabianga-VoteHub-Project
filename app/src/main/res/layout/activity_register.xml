@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/background_img">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_below="@+id/register"
+        android:background="#30ffffff"
+        android:hint="Registration number"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_below="@+id/username"
+        android:background="#30ffffff"
+        android:hint="Email"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/baseline_email_25"
+        android:drawablePadding="20dp"/>
+
+    <Spinner
+        android:id="@+id/school_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_plr"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="#30ffffff"
+        android:entries="@array/school_options"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@+id/school_spinner"
+        android:background="#30ffffff"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:drawablePadding="20dp"
+        android:inputType="textPassword"
+        />
+
+    <CheckBox
+        android:id="@+id/show_password"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:textColor="@color/white"
+        android:text="Show Password"
+        android:layout_margin="10dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_btn"
+        android:layout_below="@+id/show_password"
+        android:textColor="@color/white"
+        android:text="REGISTER"
+        android:backgroundTint="@color/laven"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/just_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_gravity="end"
+        android:focusable="true"
+        android:clickable="true"
+        />
+
+</LinearLayout>
+
+
+
+

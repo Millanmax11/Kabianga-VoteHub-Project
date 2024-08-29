@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "388049928427",
+    "project_id": "skills-c3c6b",
+    "storage_bucket": "skills-c3c6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388049928427:android:25ee1e82f7d59da2ccbeae",
+        "android_client_info": {
+          "package_name": "com.example.skills"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuDrOUjID7BRcwLKWXnMlH3C8Fu0Z5Yrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
